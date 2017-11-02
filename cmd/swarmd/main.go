@@ -9,7 +9,6 @@ import (
 	"os"
 	"os/signal"
 
-	engineapi "github.com/docker/docker/client"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/agent/exec/containerd"
 	"github.com/docker/swarmkit/agent/exec/dockerapi"
@@ -22,6 +21,7 @@ import (
 	"github.com/docker/swarmkit/node"
 	"github.com/docker/swarmkit/version"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
+	engineapi "github.com/moby/moby/client"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

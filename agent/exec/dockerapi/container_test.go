@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	enginecontainer "github.com/docker/docker/api/types/container"
-	enginemount "github.com/docker/docker/api/types/mount"
 	"github.com/docker/swarmkit/api"
 	gogotypes "github.com/gogo/protobuf/types"
+	enginecontainer "github.com/moby/moby/api/types/container"
+	enginemount "github.com/moby/moby/api/types/mount"
 )
 
 func TestVolumesAndBinds(t *testing.T) {

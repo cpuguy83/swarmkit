@@ -8,13 +8,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/docker/api/types"
-	enginecontainer "github.com/docker/docker/api/types/container"
-	"github.com/docker/docker/api/types/events"
-	"github.com/docker/docker/api/types/filters"
-	enginemount "github.com/docker/docker/api/types/mount"
-	"github.com/docker/docker/api/types/network"
-	"github.com/docker/docker/api/types/volume"
 	"github.com/docker/go-connections/nat"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/api"
@@ -22,6 +15,13 @@ import (
 	"github.com/docker/swarmkit/api/naming"
 	"github.com/docker/swarmkit/template"
 	gogotypes "github.com/gogo/protobuf/types"
+	"github.com/moby/moby/api/types"
+	enginecontainer "github.com/moby/moby/api/types/container"
+	"github.com/moby/moby/api/types/events"
+	"github.com/moby/moby/api/types/filters"
+	enginemount "github.com/moby/moby/api/types/mount"
+	"github.com/moby/moby/api/types/network"
+	"github.com/moby/moby/api/types/volume"
 )
 
 const (

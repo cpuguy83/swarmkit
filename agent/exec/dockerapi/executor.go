@@ -4,12 +4,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/docker/docker/api/types/filters"
-	engineapi "github.com/docker/docker/client"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/agent/secrets"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/log"
+	"github.com/moby/moby/api/types/filters"
+	engineapi "github.com/moby/moby/client"
 	"golang.org/x/net/context"
 	"sync"
 )

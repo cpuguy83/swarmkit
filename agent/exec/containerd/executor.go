@@ -5,12 +5,12 @@ import (
 	"runtime"
 
 	"github.com/containerd/containerd"
-	"github.com/docker/docker/pkg/sysinfo"
-	"github.com/docker/docker/pkg/system"
 	"github.com/docker/swarmkit/agent/exec"
 	"github.com/docker/swarmkit/agent/secrets"
 	"github.com/docker/swarmkit/api"
 	"github.com/docker/swarmkit/log"
+	"github.com/moby/moby/pkg/sysinfo"
+	"github.com/moby/moby/pkg/system"
 	"github.com/pkg/errors"
 	"golang.org/x/net/context"
 )
