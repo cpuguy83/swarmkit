@@ -148,6 +148,7 @@ func (c *containerAdapter) create(ctx context.Context) error {
 		c.container.config(),
 		c.container.hostConfig(),
 		c.container.networkingConfig(),
+		nil,
 		c.container.name())
 
 	return err
